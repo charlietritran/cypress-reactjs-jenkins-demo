@@ -17,8 +17,8 @@ pipeline {
             steps {
                 echo 'Runnig npm start in background'
                 //sh 'set -x'
-                sh 'npm start'
-                sh 'sleep 60'
+                sh 'npm start &'
+                //sh 'sleep 60'
                 //sh 'echo $! > .pidfile'
                 //sh 'set +x'
 
