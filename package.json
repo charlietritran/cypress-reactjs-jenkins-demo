@@ -40,7 +40,7 @@
     "react-draggable": "^4.0.3",
     "react-final-form": "^6.5.2",
     "react-reflex": "^3.0.13",
-    "react-scripts": "^3.4.3",
+    "react-scripts": "^4.0.3",
     "react-splitter-layout": "^4.0.0",
     "react-table": "^6.10.3",
     "source-map": "^0.7.3",
@@ -53,7 +53,7 @@
   },
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "start": "PORT=3006 react-scripts --max-old-space-size=8128 start",
+    "start": "PORT=3001 react-scripts --max-old-space-size=8128 start",
     "build": "react-scripts --max-old-space-size=8128  build ",
     "test": "react-scripts test",
     "lint": "eslint .",
