@@ -11,10 +11,11 @@ describe('The Home Page', () => {
       req.reply((res) => {
 
         // update msg
-        console.log('RES:', res.body)
+        const origJson = res.body
+        console.log('RES:', origJson)
         let jsonObj = res.body
         jsonObj.msg = 'Welcome to Cypress Intercept12345' 
-
+        //console.log('JSON UPDATED:', jsonObj)
 
         //list.push('Kiwi')
         res.send(jsonObj)
