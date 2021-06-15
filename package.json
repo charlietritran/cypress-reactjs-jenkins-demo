@@ -17,7 +17,7 @@
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --spec 'cypress/integration/*'",
     "cypress:ci": "concurrently \"cypress run\" --kill-others \"ng serve\" --success first",
-    "cypress:headless": "cypress run --browser chrome --headless"
+    "cypress:headless": "cypress run --browser firefox --headless"
   },
   "browserslist": {
     "production": [
