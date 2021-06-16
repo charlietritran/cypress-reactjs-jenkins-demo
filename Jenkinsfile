@@ -35,7 +35,7 @@ pipeline {
 
         stage('Unit Tests') {
             steps {
-                //sh 'npm run cypress:headless'
+                sh 'npm run cypress:headless'
                 
             }
         }
