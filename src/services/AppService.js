@@ -2,8 +2,6 @@ import axios from 'axios';
 
 class AppService {
 
-  constructor() {}
-
   /**
    * GET CITM INIT DATA IN JSON FORMAT
    * RETURN: a json data for citm-app 
