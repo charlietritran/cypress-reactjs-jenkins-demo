@@ -3,9 +3,9 @@ pipeline {
 
     tools {nodejs "NodeJS10.24.1"}
 
-    //environment {
-        //CHROME_BIN = '/bin/google-chrome'
-    //}
+    environment {
+        CHROME_BIN = '/bin/google-chrome'
+    }
 
     stages {
         stage('Dependencies') {
