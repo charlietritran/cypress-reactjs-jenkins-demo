@@ -25,30 +25,7 @@ pipeline {
 
             }
         }
-        /*stage('start local server') {
-            steps {
-                // start local server in the background
-                // we will shut it down in "post" command block
-                sh 'nohup npm run start'
-            }
-        }*/
-
-        stage('Unit Tests') {
-            steps {
-                sh 'npm run cypress:headless'
-                
-            }
-        }
-        stage('e2e Tests') {
-            steps {
-                echo 'e2e Testing....'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
+        
     }
 
     post {
