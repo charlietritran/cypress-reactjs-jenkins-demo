@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "NodeJS10.24.1"}
 
     environment {
-        CHROME_BIN = '/bin/google-chrome'
+        //CHROME_BIN = '/bin/google-chrome'
     }
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
             steps {
                 echo 'Runnig npm start in background'
                 //sh 'set -x'
-                sh 'npm start &'
+                sh 'npm start'
                 //sh 'sleep 60'
                 //sh 'echo $! > .pidfile'
                 //sh 'set +x'
@@ -35,7 +35,7 @@ pipeline {
 
         stage('Unit Tests') {
             steps {
-                sh 'npm run cypress:headless'
+                //sh 'npm run cypress:headless'
                 
             }
         }
