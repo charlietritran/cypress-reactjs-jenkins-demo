@@ -2,7 +2,9 @@ pipeline {
     agent any
 
     tools {nodejs "NodeJS10.24.1"}
-
+options {
+        ansiColor('xterm')
+    }
     environment {
         CHROME_BIN = '/bin/google-chrome'
          LC_ALL = 'en_US.UTF-8'
