@@ -6,8 +6,9 @@ options {
         ansiColor('xterm')
     }
     environment {
-        CHROME_BIN = '/bin/google-chrome'
-         LC_ALL = 'en_US.UTF-8'
+        //CHROME_BIN = '/bin/google-chrome'
+        FIREFOX_BIN = '/bin/firefox'
+        LC_ALL = 'en_US.UTF-8'
         LANG    = 'en_US.UTF-8'
         LANGUAGE = 'en_US.UTF-8'
     }
